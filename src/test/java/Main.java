@@ -10,8 +10,13 @@ public class Main {
             WebPage webPage = new WebPage(sitemapUrl);
 
             browser.loadUrl(webPage);
-            browser.shootScreen(460, 500);
-            browser.shootScreen(1024, 768);
+            browser.shootScreen(320, 480);
+            browser.shootScreen(360, 640);
+            browser.shootScreen(768, 1024);
+            browser.shootScreen(800, 1280);
+            browser.shootScreen(980, 1280);
+            browser.shootScreen(1280, 600);
+            browser.shootScreen(1920, 900);
 
         }
 

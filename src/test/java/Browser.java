@@ -25,7 +25,7 @@ public class Browser {
         driver.manage().window().setSize(new Dimension(width, height));
         File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
-            FileUtils.copyFile(screenshot, new File(this.webPage.getFileName() + new String(String.valueOf(width)) + ".png"));
+            FileUtils.copyFile(screenshot, new File(this.webPage.getFileName() + "_" + new String(String.valueOf(width)) + "_" + new String(String.valueOf(width)) + ".png"));
         } catch (IOException e) {
             System.err.println("Error ScreenShot" + e.getMessage());
         }
